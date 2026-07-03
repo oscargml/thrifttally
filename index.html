@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resale Fee Calculator — eBay, Etsy, Poshmark, Depop & More | ThriftTally</title>
+<meta name="description" content="Compare seller fees across eBay, Etsy, Poshmark, Depop, Mercari, Facebook Marketplace and Whatnot. See exactly what you'll keep before you list a single item.">
+<meta name="keywords" content="resale fee calculator, ebay fees calculator, etsy fees calculator, poshmark fees, depop fees, best place to sell vintage items, thrift flip calculator">
+<link rel="canonical" href="https://thrifttally.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- Open Graph -->
+<meta property="og:title" content="ThriftTally — Know what you'll actually keep">
+<meta property="og:description" content="A free calculator that compares seller fees across 7 resale marketplaces, so you list where you actually net the most.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thrifttally.com/">
+<meta property="og:site_name" content="ThriftTally">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://thrifttally.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ThriftTally — Know what you'll actually keep">
+<meta name="twitter:description" content="Compare eBay, Etsy, Poshmark, Depop, Mercari, Facebook Marketplace & Whatnot fees before you list.">
+<meta name="twitter:image" content="https://thrifttally.com/assets/og-image.png">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- TODO(owner): replace GA_MEASUREMENT_ID and the Search Console meta below -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script> -->
+<!-- <meta name="google-site-verification" content="REPLACE_ME"> -->
+
+<!-- AdSense loader (real publisher ID) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8643026289824701" crossorigin="anonymous"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "ThriftTally Resale Fee Calculator",
+  "description": "Free calculator comparing seller fees and net payout across eBay, Etsy, Poshmark, Depop, Mercari, Facebook Marketplace and Whatnot.",
+  "url": "https://thrifttally.com/",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web Browser",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "image": "https://thrifttally.com/assets/og-image.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ThriftTally",
+  "url": "https://thrifttally.com/",
+  "logo": "https://thrifttally.com/assets/logo.png"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How accurate are these fee estimates?",
+      "acceptedAnswer": { "@type": "Answer", "text": "They're built from each marketplace's published seller rate card and are accurate for most standard listings. Some categories carry special rates (eBay's business & industrial tier, promoted-listing add-ons, Etsy Plus subscriptions), so treat this as a planning estimate and confirm the exact number in your seller dashboard before you price an item." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the calculator include the cost of shipping?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You can enter what you personally pay to ship an item, and it's subtracted from your payout. It does not simulate what a buyer pays for shipping, since that varies by carrier, weight and platform-negotiated rates." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I owe taxes on resale income?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In the US, marketplaces are required to send you (and the IRS) a 1099-K once your sales cross certain thresholds, and income from reselling for profit is generally taxable regardless of whether a form is issued. This calculator doesn't estimate tax — talk to a tax professional about your specific situation." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which platform is cheapest for vintage clothing specifically?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As of 2026, Depop charges 0% seller commission for US and UK sellers (just payment processing), which usually makes it the lowest-fee option for fashion. Etsy and eBay often net more in absolute dollars for well-described, search-friendly vintage pieces despite higher fees, because of stronger buyer intent." }
+    },
+    {
+      "@type": "Question",
+      "name": "How often do these fees change?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Marketplaces adjust seller fees periodically, sometimes with little notice. This page is reviewed and updated when rate cards change; the 'fees last checked' date in the footer shows when it was last verified." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">ThriftTally <span class="brand-mark">$¢</span></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html" aria-current="page">Calculator</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Free resale fee calculator</span>
+        <h1>Know what you'll <em>actually</em> keep.</h1>
+        <p class="lede">Every resale marketplace takes its cut differently. Enter one price and see your real net payout across eBay, Etsy, Poshmark, Depop, Mercari, Facebook Marketplace and Whatnot — side by side, no sign-up.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#calculator">Calculate my payout</a>
+          <a class="btn btn-ghost" href="blog/index.html">Read the platform guides</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="receipt">
+          <span class="r-stamp">sold</span>
+          <div class="r-title">Vintage denim jacket</div>
+          <div class="r-row"><span>Sale price</span><span>$40.00</span></div>
+          <div class="r-row"><span>eBay final value fee</span><span>&minus;$5.30</span></div>
+          <div class="r-row"><span>Payment processing</span><span>&minus;$1.46</span></div>
+          <div class="r-row total"><span>You keep</span><span>$33.24</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculator">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">The calculator</span>
+        <h2>Plug in your item, compare every platform at once.</h2>
+      </div>
+
+      <div class="calc-shell">
+        <form class="calc-inputs" aria-label="Fee calculator inputs" onsubmit="return false;">
+          <h3>Your item</h3>
+          <p class="sub">All fields update the results live.</p>
+
+          <div class="field">
+            <label for="inputPrice">Sale price</label>
+            <div class="input-money">
+              <input type="number" id="inputPrice" min="0" step="0.01" value="40" inputmode="decimal">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="inputCost">What you paid for it <span style="font-weight:400;color:var(--text-lo);">(optional)</span></label>
+            <div class="input-money">
+              <input type="number" id="inputCost" min="0" step="0.01" value="12" inputmode="decimal">
+            </div>
+            <p class="hint">Used to show profit, not just marketplace payout.</p>
+          </div>
+
+          <div class="field">
+            <label for="inputShipping">Shipping you cover <span style="font-weight:400;color:var(--text-lo);">(optional)</span></label>
+            <div class="input-money">
+              <input type="number" id="inputShipping" min="0" step="0.01" value="0" inputmode="decimal">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="inputEbayCategory">eBay category</label>
+            <select id="inputEbayCategory">
+              <option value="standard">Most categories (13.25%)</option>
+              <option value="business">Business &amp; industrial (6.35%)</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label id="depopLabel">Depop seller region</label>
+            <div class="toggle-row" id="toggleDepop" role="group" aria-labelledby="depopLabel">
+              <button type="button" data-value="us_uk" aria-pressed="true">US / UK</button>
+              <button type="button" data-value="intl" aria-pressed="false">Other region</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label id="fbLabel">Facebook Marketplace</label>
+            <div class="toggle-row" id="toggleFb" role="group" aria-labelledby="fbLabel">
+              <button type="button" data-value="shipped" aria-pressed="true">Shipped</button>
+              <button type="button" data-value="local" aria-pressed="false">Local pickup</button>
+            </div>
+          </div>
+        </form>
+
+        <div>
+          <div class="tag-grid" id="tagGrid" aria-live="polite"></div>
+          <p class="calc-note">Fees last checked April 2026 from each platform's public seller rate card. Categories, promotions, and store subscriptions can change your real rate — see the <a href="blog/ebay-vs-etsy-vs-poshmark-fees.html">full fee breakdown</a> for the fine print, or the <a href="#faq">FAQ</a> below.</p>
+        </div>
+      </div>
+
+      <div class="ad-slot">
+        <!-- TODO(owner): paste your AdSense ad-slot ID here, or leave as Auto Ads -->
+        Advertisement
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tinted">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How this is calculated</span>
+        <h2>Three things every payout includes.</h2>
+      </div>
+      <div class="card-row">
+        <div class="info-card">
+          <div class="num">Marketplace cut</div>
+          <h3>Commission or final value fee</h3>
+          <p>What the platform charges for hosting the sale — a flat percentage, a category-based rate, or a tiered flat fee depending on price point.</p>
+        </div>
+        <div class="info-card">
+          <div class="num">Payment processing</div>
+          <h3>Moving the money</h3>
+          <p>Most platforms bill this separately from their commission, usually a small percentage plus a fixed per-order charge. A few, like Poshmark, roll it into one flat number.</p>
+        </div>
+        <div class="info-card">
+          <div class="num">What's on you</div>
+          <h3>Shipping, taxes, sourcing</h3>
+          <p>Buyer-paid shipping doesn't touch your payout, but shipping you personally cover does — enter it above. Income tax on resale profit is separate and not estimated here.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta-strip">
+        <div>
+          <h3>Want the platform-by-platform playbook?</h3>
+          <p>Read the full breakdown of where vintage, furniture, and general secondhand items actually sell fastest — and for the most money.</p>
+        </div>
+        <a class="btn btn-primary" href="blog/index.html">Browse the blog</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Before you trust the numbers</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How accurate are these fee estimates?</summary>
+          <p>They're built from each marketplace's published seller rate card and are accurate for most standard listings. Some categories carry special rates (eBay's business &amp; industrial tier, promoted-listing add-ons, Etsy Plus subscriptions), so treat this as a planning estimate and confirm the exact number in your seller dashboard before you price an item.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Does the calculator include the cost of shipping?</summary>
+          <p>You can enter what you personally pay to ship an item, and it's subtracted from your payout. It does not simulate what a buyer pays for shipping, since that varies by carrier, weight, and platform-negotiated rates.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do I owe taxes on resale income?</summary>
+          <p>In the US, marketplaces are required to send you (and the IRS) a 1099-K once your sales cross certain thresholds, and income from reselling for profit is generally taxable regardless of whether a form is issued. This calculator doesn't estimate tax — talk to a tax professional about your specific situation.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Which platform is cheapest for vintage clothing specifically?</summary>
+          <p>As of 2026, Depop charges 0% seller commission for US and UK sellers (just payment processing), which usually makes it the lowest-fee option for fashion. Etsy and eBay often net more in absolute dollars for well-described, search-friendly vintage pieces despite higher fees, because of stronger buyer intent.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How often do these fees change?</summary>
+          <p>Marketplaces adjust seller fees periodically, sometimes with little notice. This page is reviewed and updated when rate cards change; the "fees last checked" date above the calculator shows when it was last verified.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="ad-slot">
+      <!-- TODO(owner): second AdSense unit, or delete if Auto Ads is enabled -->
+      Advertisement
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap" style="flex-direction:column;">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;width:100%;">
+      <span>&copy; <span data-year></span> ThriftTally</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html">Calculator</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+    <p class="disclosure">Fee data is sourced from public marketplace rate cards and updated periodically — always confirm current fees on the platform itself before listing. Some links on this site are affiliate links; if you list or buy through them, ThriftTally may earn a commission at no extra cost to you. This site is independent and not affiliated with eBay, Etsy, Poshmark, Depop, Mercari, Facebook, or Whatnot.</p>
+  </div>
+</footer>
+
+<script src="js/calculator.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
